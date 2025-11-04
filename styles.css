@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+body {
+  background-color: #f9fafb;
+  color: #333;
+  
+    
+}
+
+nav {
+  background: #1e293b;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+nav .logo img {
+    height:48px; 
+    width:auto; 
+    display:block;
+    padding-left: 17px;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+.poster{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.poster img{
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .poster{
+    height: 50vh;
+  }
+  
+  .poster img{
+    max-width: 95%;
+
+  }
+}
+
+/* @keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+} */
+
+/* Game cards */
+.game-section {
+  padding: 2rem 1.5rem;
+}
+
+.game-section h2 {
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.game-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.game-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.game-card p {
+  padding: 0.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e293b;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.more-link a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  font: bold;
+}
+
+.more-link a :hover {
+  color: #111;
+}
+
+.more-link a :active {
+  color: #000000;
+  transform: scale(0.98);
+  transition: all 0.2s ease;
+}
+
+
+.contact a {
+  text-decoration: none;
+  color: #fff;
+}
